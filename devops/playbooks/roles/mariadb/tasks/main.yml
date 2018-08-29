@@ -1,0 +1,7 @@
+---
+# tasks file for mariadb
+- name: installing mariadb
+  package: name=mariadb-server state=present
+
+- name: starting mariadb
+  service: name=mariadb.service state=started enabled=yes

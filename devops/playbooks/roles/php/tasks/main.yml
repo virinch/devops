@@ -1,0 +1,10 @@
+---
+# tasks file for php and phpmyadmin
+- name: installing php
+  package: name=php.* state=present
+
+- name: installing epel-release
+  package: name=epel-release state=present
+
+- name: installing phpmyadmin
+  package: name=phpMyAdmin state=present

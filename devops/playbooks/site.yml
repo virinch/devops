@@ -1,0 +1,11 @@
+---
+- hosts: web
+  roles:
+    - httpd
+    - git
+    - mariadb
+    - php
+    - firewall
+  tasks:
+    - name: git clonning
+      git: repo=https://github.com/virinch/newphp.git dest=/var/www/html

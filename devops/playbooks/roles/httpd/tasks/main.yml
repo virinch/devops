@@ -1,0 +1,7 @@
+---
+# tasks file for httpd
+- name: installing httpd
+  package: name=httpd state=present
+
+- name: starting httpd
+  service: name=httpd state=started enabled=yes

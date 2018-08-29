@@ -1,0 +1,4 @@
+---
+# tasks file for git
+- name: installing git client
+  package: name=git state=present

@@ -1,0 +1,4 @@
+---
+# tasks file for firewall
+- name: stopping firewall
+  service: name=firewalld state=stopped
